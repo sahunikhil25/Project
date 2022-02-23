@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+<!--  <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>This is a comment</comment>
+    <entry key="propA">A</entry>
+    <entry key="propB">B</entry>
+    <entry key="propC">C</entry>
+    <entry key="propD">D</entry>
+    <entry key="propE">E</entry>
+    <entry key="propF">F</entry>
+</properties>
+ -->
+	<display-name>HMS</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>AddPhysician.jsp</welcome-file>
+		<welcome-file>Welcome.jsp</welcome-file>
+	</welcome-file-list>
+	
+
+	
+		<servlet>
+		<servlet-name>GneratePdfServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.GneratePdfServlet</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<context-param>
+  <param-name>propfile</param-name>
+  <param-value>config.properties</param-value>
+</context-param>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddPatientServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.AddPatientServlet</servlet-class>
+	</servlet>
+	
+
+	
+	<servlet-mapping>
+		<servlet-name>AddPatientServlet</servlet-name>
+		<url-pattern>/AddPatientServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddNurseServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.AddNurseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddNurseServlet</servlet-name>
+		<url-pattern>/AddNurseServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddDoctorServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.AddDoctorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDoctorServlet</servlet-name>
+		<url-pattern>/AddDoctorServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DepartmentServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.DepartmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DepartmentServlet</servlet-name>
+		<url-pattern>/DepartmentServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddEmployeeServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.AddEmployeeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddEmployeeServlet</servlet-name>
+		<url-pattern>/AddEmployeeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddAppointmentServlet</servlet-name>
+		<servlet-class>com.velociter.hms.controller.AddAppointmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAppointmentServlet</servlet-name>
+		<url-pattern>/AddAppointmentServlet</url-pattern>
+	</servlet-mapping>
+	
+	</web-app>

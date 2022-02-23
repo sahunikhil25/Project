@@ -1,0 +1,183 @@
+@charset "ISO-8859-1";
+
+                         /*.................Doctor style.....................  */
+* {
+	box-sizing: border-box;
+}
+
+
+h1 {
+	
+	margin-left: 450px;
+}
+
+input {
+	padding: 10px;
+	width: 100%;
+	font-size: 17px;
+	font-family: Futara;
+	border: 1px solid #aaaaaa;
+}
+
+button {
+	background-color: #04AA6D;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+#doctorcard {
+	width: 750px;
+	height: 535px;
+	margin-left: 160px;
+	background-color: white;
+	background-clip: border-box;
+	border: 1px solid ;
+}
+
+#showDoctor
+{
+   margin: auto;
+	font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;	
+}
+
+select {
+	padding: 8px;
+	min-width: -webkit-fill-available;
+}
+
+                    /*.......................Department Style......................*/
+#card1
+{
+height: 330px;
+	margin-left: 190px;
+	background-color: white;
+	background-clip: border-box;
+	border: 1px solid;
+	padding-right: 33px;
+	width: 670px;
+}
+#showDepartment
+{
+	margin: auto;
+	font-size: 1rem;
+    font-weight: 700;
+    line-height: 2.1;
+}
+#h1
+{
+margin-left: 450px;
+}
+#departmentButton
+{
+	
+   background-color: #04AA6D;
+	color: #ffffff;
+	border: none;
+	padding: 4px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin-top: 10px;	
+}
+
+                /*...........................AddPatient Style....................*/
+                
+ #patientcard
+ {
+    position: inherit;
+    width: 776px;
+    height: 400px;
+    margin-left: 170px;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid;
+    padding-right: 120px;
+ }  
+ #patientButton
+ {
+   background-color: #04AA6D;
+	color: #ffffff;
+	border: none;
+	padding: 8px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin-top: 10px;
+ }    
+ #showPatient
+ {
+    margin: auto;
+	font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+ }                /*............................Nurse style.......................*/
+
+ 
+#employeecard
+ {
+    width: 728px;
+    height: 502px;
+    margin-left: 180px;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid;
+    padding-right: 49px;
+ }
+#showEmployee
+ {
+    margin: auto;
+	font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.8;
+ }
+/*  #nursebutton
+ {
+   background-color: #04AA6D;
+	color: #ffffff;
+	border: none;
+	padding: 8px 20px;
+	font-size: 17px;
+	font-family: Raleway;
+	cursor: pointer;
+	margin-top: 15px; 
+ } */
+ 
+                  /*...............Employee style..................  */
+                  
+              
+                  
+ 
+                 /*............................success message style.......................*/
+
+ #successmessage
+ {
+text-align:center;
+margin-top:240px;
+font-size:23px;
+ }
+.img
+{
+    width: 49px;
+    height: 26px;
+    mix-blend-mode: darken;
+    margin-top: -15px;
+}      
+
+#patientList
+{
+	color: orangered;
+    text-decoration-line: underline;
+    font-size: 20px;
+    margin-top: -26px;
+}       

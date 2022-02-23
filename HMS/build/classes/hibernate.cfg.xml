@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hbm2ddl.auto">update</property>
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="connection.username">VelociterHMS</property>
+		<property name="connection.password">velociter</property>
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.velociter.hms.model.Patient" />
+		<mapping class="com.velociter.hms.model.Doctor" />
+		<mapping class="com.velociter.hms.model.Nurse" />
+		<mapping class="com.velociter.hms.model.Department" />
+		<mapping class="com.velociter.hms.model.Admin" />
+		<mapping class="com.velociter.hms.model.Specialties" />
+		<mapping class="com.velociter.hms.model.Employee" />
+		<mapping class="com.velociter.hms.model.Designation" />
+		<mapping class="com.velociter.hms.model.Appointment"/>
+	</session-factory>
+</hibernate-configuration>
